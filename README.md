@@ -28,14 +28,15 @@
 2. **Creación del entorno de desarrollo para Python:**
    - Instalar virtualenv: `pip install virtualenv`
    - Crear el entorno: `python -m venv (nombre)`
-   - Activar manualmente el entorno: `.\venv\Scripts\Activate`
-3. **Instalación de Django:** 
+   - Activar manualmente el entorno: `.\venv\Scripts\Activate` o `source venv/Scripts/activate`
+'
+3. **Instalación de Django:**
    - Comando: `pip install django`
    - Para iniciar a trabajar con Django: `django-admin`
-4. **Creación del proyecto Django:** 
+4. **Creación del proyecto Django:**
    - Comando: `django-admin startproject django_crud_api .`
    - Para correr el servidor: `python manage.py runserver`
-5. **Creación de la aplicación:** 
+5. **Creación de la aplicación:**
    - Comando: `python manage.py startapp tasks`
    - En `settings.py`, agregar `tasks` a `INSTALLED_APPS`
    - Crear tablas y migrar: `python manage.py migrate`
@@ -73,10 +74,13 @@
 
 2. **Actualización de Herramientas:**
    - Si el comando `pip install coreapi` no funciona, actualizar las herramientas de pip:
+
      ```bash
      pip install --upgrade setuptools
      ```
+
    - Configurar Django REST Framework en `settings.py`:
+
      ```python
      REST_FRAMEWORK = {
          ...: ...,
@@ -88,15 +92,20 @@
 
 1. **Configuración del Entorno:**
    - Verificar la versión de Node.js con el comando:
+
      ```bash
      node --version
      ```
+
    - Crear una nueva aplicación con Vite:
+
      ```bash
      npm create vite
      ```
+
      - Elegir un nombre para la app del frontend y seleccionar React con JavaScript.
    - Ejecutar los siguientes comandos para el funcionamiento de Vite y React:
+
      ```bash
      cd client
      npm install
@@ -105,9 +114,11 @@
 
 2. **Enlace entre Frontend y Backend:**
    - Instalar las siguientes librerías:
+
      ```bash
      npm i react-router-dom react-hot-toast axios react-hook-form
      ```
+
    - Configurar el archivo `App.jsx` en la carpeta `src` según sea necesario.
    - Crear las carpetas `pages`, `components`, y `api`, y los archivos correspondientes para cada carpeta.
 
@@ -135,7 +146,7 @@ Tareas 11/09/2024
 
 ### Tareas y Planificación
 
-1. **Mañana:**
+1. **Tarea:**
    - Terminación de la app de tareas.
 
 2. **Tareas Nuevas:**
@@ -143,17 +154,17 @@ Tareas 11/09/2024
 
 3. **Django:**
    - Implementar filtros.
-   - Configurar Simple JWT (JSON Web Tokens).
+   - Configurar Simple JWT (JSON Web Tokens) - crear un login.
    - Utilizar Django REST Framework.
    - Trabajar con señales de Django.
    - Crear modelos intermedios.
+   - Websocker
 
 4. **Mejoras en la Aplicación:**
-   - Implementar paginación mediante filtros.
    - Categorizar las tareas por:
      - Prioridad (Alta, Media, Baja).
-     - Severidad (Urgente).
-   - Agregar fecha de creación y modificación a las tareas.
+     - Severidad (Urgente, importante, menor).
+   - Agregar fecha de creación.
 
 5. **Pruebas:**
    - Utilizar Postman para probar las funcionalidades.
