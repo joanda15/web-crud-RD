@@ -28,7 +28,8 @@
 2. **Creación del entorno de desarrollo para Python:**
    - Instalar virtualenv: `pip install virtualenv`
    - Crear el entorno: `python -m venv (nombre)`
-   - Activar manualmente el entorno: `.\venv\Scripts\Activate`
+   - Activar manualmente el entorno: `.\venv\Scripts\Activate` o `source venv/Scripts/activate`
+'
 3. **Instalación de Django:**
    - Comando: `pip install django`
    - Para iniciar a trabajar con Django: `django-admin`
@@ -145,7 +146,7 @@ Tareas 11/09/2024
 
 ### Tareas y Planificación
 
-1. **Mañana:**
+1. **Tarea:**
    - Terminación de la app de tareas.
 
 2. **Tareas Nuevas:**
@@ -153,17 +154,17 @@ Tareas 11/09/2024
 
 3. **Django:**
    - Implementar filtros.
-   - Configurar Simple JWT (JSON Web Tokens).
+   - Configurar Simple JWT (JSON Web Tokens) - crear un login.
    - Utilizar Django REST Framework.
    - Trabajar con señales de Django.
    - Crear modelos intermedios.
+   - Websocker
 
 4. **Mejoras en la Aplicación:**
-   - Implementar paginación mediante filtros.
    - Categorizar las tareas por:
      - Prioridad (Alta, Media, Baja).
      - Severidad (Urgente, importante, menor).
-   - Agregar fecha de creación y modificación a las tareas.
+   - Agregar fecha de creación.
 
 5. **Pruebas:**
    - Utilizar Postman para probar las funcionalidades.

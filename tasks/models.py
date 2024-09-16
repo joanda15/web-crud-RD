@@ -1,4 +1,3 @@
-# models.py
 from django.db import models
 
 # Modelo Priority
@@ -21,7 +20,6 @@ class Task(models.Model):
     description = models.TextField(blank=True)
     done = models.BooleanField(default=False)
     priority = models.ForeignKey(Priority, on_delete=models.CASCADE, default=1)
-    severidad = models.ForeignKey(Severidad, on_delete=models.CASCADE, default=1)  # Añadido el campo severidad
-
+    severidad = models.ForeignKey(Severidad, on_delete=models.CASCADE, default=1)
     def __str__(self):
         return self.title
